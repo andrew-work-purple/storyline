@@ -6,3 +6,7 @@ var customCSS = `
         background: #43268F !important;
     }
 `
+var style = document.createElement('style');
+style.type = 'text/css';
+document.head.appendChild(style);
+style.appendChild(document.createTextNode(customCSS));
