@@ -38,4 +38,4 @@ const eventController = {
     }
 }
 //add listeners
-document.addEventListener('click',controller.clickListener(event));
+document.addEventListener('click',eventController.clickListener(event));
