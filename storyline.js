@@ -24,13 +24,12 @@ const controller = {
                 this.simClick();
         }
     },
-    simClick: {
-        clickables: [],
-        background: {},
-
+    simClickProps: {
+        clickElm: {}
     },
     simClick() {
-
+        this.simClickProps.clickElm = document.querySelector('div[data-acc-text*="Hotspot"]');
+        console.log(this.simClickProps.clickElm);
     }
 }
 const eventController = {
