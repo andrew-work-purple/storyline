@@ -38,4 +38,4 @@ const eventController = {
     }
 }
 //add listeners
-document.addEventListener('click',eventController.clickListener(event));
+document.querySelector('#preso').addEventListener('mousedown',eventController.clickListener(event));
