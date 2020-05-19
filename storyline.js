@@ -1,5 +1,5 @@
-window.ver = '1.0'
-console.log('storyline functions version' + window.ver);
+window.ver = '1.1'
+console.log('storyline functions version ' + window.ver);
 
 var customCSS = `
     .cs-custom-theme {
