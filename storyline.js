@@ -22,6 +22,9 @@ const controller = {
         switch(this.slideType) {
             case 'simclick': 
                 this.simClick();
+                eventController.clickListener = (event) => {
+                    console.log(event);
+                }
         }
     },
     simClickProps: {
@@ -38,4 +41,6 @@ const eventController = {
     }
 }
 //add listeners
-document.querySelector('#preso').addEventListener('mousedown',eventController.clickListener(event));
+document.querySelector('#preso').addEventListener('mousedown', event => {
+    eventController.clickListener(event);
+})
