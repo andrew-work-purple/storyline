@@ -12,8 +12,8 @@ document.head.appendChild(style);
 style.appendChild(document.createTextNode(customCSS));
 
 const controller = {
-    slideType = '',
-    slideProps = {},
+    slideType: '',
+    slideProps: {},
     updateSlide(props) {
         this.slideType = props.slideType;
         this.slideProps = props.slideProps;
